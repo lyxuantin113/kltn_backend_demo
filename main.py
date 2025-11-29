@@ -427,6 +427,11 @@ except Exception as e:
 
 @app.get("/health")
 def health():
+    # Debug: List files in models dir
+    model_files = []
+    if os.path.exists(MODELS_DIR):
+        model_files = os.listdir(MODELS_DIR)
+        
     return {
         "status": "ok",
         "device": str(DEVICE),
@@ -434,6 +439,8 @@ def health():
         "taskB_loaded": len(MODEL_B_POOL) > 0,
         "taskB_models": list(MODEL_B_POOL.keys()),
         "taskA_models_cached": list(MODEL_A_CACHE.keys()),
+        "debug_models_dir": MODELS_DIR,
+        "debug_model_files": model_files
     }
 
 
