@@ -1,6 +1,9 @@
 # Sử dụng Python 3.10
 FROM python:3.10-slim
 
+# Force rebuild to pick up new apt packages
+RUN echo "Cache bust 2025-11-29"
+
 # Cài đặt các thư viện hệ thống cần thiết cho OpenCV
 RUN apt-get update && apt-get install -y \
     libgl1 \
