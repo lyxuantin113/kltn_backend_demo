@@ -17,6 +17,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Download models thực từ Hugging Face (fix lỗi LFS pointer)
+COPY download_models.py .
+RUN python download_models.py
+
 # Tạo user non-root để chạy app (Yêu cầu của Hugging Face Spaces)
 RUN useradd -m -u 1000 user
 USER user

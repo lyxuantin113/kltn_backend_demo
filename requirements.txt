@@ -7,3 +7,4 @@ ultralytics
 opencv-python-headless
 pillow
 numpy
+huggingface_hub
