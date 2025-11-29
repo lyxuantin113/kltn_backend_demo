@@ -34,7 +34,7 @@ MODELS_DIR = os.path.join(_script_dir, "models")
 # Cấu hình Task A (Phát hiện hành vi tài xế)
 TASK_A_CONFIGS = {
     "ResNet18": {
-        "path": os.path.join(MODELS_DIR, "dd_resnet18_uniqu_subjects.pt"),
+        "path": os.path.join(MODELS_DIR, "dd_resnet18_unique_subjects.pt"),
         "type": "classification"
     },
     "YOLOv8": {
