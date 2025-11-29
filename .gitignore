@@ -17,5 +17,5 @@ temp_videos/
 gradcam_results/
 
 # Large models (>100MB)
-*.pth
+# *.pth  <-- Removed to allow LFS tracking
 # *.pt  <-- Uncomment nếu muốn ignore cả file .pt (YOLO/ResNet)
