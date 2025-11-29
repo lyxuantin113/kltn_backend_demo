@@ -1,12 +1,14 @@
 ---
 title: Kltn Fastapi Demo
-emoji: 💻
-colorFrom: red
-colorTo: pink
+emoji: 🚀
+colorFrom: blue
+colorTo: indigo
 sdk: docker
 pinned: false
-license: mit
-short_description: FastAPI cho demo khóa luận
+app_port: 7860
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+# KLTN Backend API Demo
+
+Backend API sử dụng FastAPI, tích hợp YOLOv8/v11 và ResNet18 để phát hiện hành vi tài xế.
+Deploy trên Hugging Face Spaces bằng Docker.
