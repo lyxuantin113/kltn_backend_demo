@@ -16,6 +16,7 @@ env/
 temp_videos/
 gradcam_results/
 
+./upload_models_script.py
 # Large models (>100MB)
 # *.pth  <-- Removed to allow LFS tracking
 # *.pt  <-- Uncomment nếu muốn ignore cả file .pt (YOLO/ResNet)
