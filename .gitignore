@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Project specific
+temp_videos/
+gradcam_results/
+
+# Large models (>100MB)
+*.pth
+# *.pt  <-- Uncomment nếu muốn ignore cả file .pt (YOLO/ResNet)

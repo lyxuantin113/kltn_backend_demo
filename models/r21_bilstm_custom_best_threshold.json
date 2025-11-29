@@ -1,0 +1,6 @@
+{
+  "best_thr_pos": 0.93,
+  "best_f1_macro": 0.9833316664999834,
+  "best_f1_attack": 0.9834983498349835,
+  "pos_class": "attack"
+}
